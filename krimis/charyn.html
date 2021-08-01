@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Jerome Charyn</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="jerome-charyn">Jerome Charyn</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Jerome_Charyn" target="_blank">Jerome Charyn</a>
+ist ein amerikanischer Autor. Die Hauptfigur seiner Kriminalromane ist
+der fiktive Polizist Isaac Sidel.</p>
+
+<blockquote>
+  <p>Charyn became interested in writing a crime novel after discovering
+<a href="https://de.wikipedia.org/wiki/Ross_Macdonald">Ross Macdonald</a>’s
+The Galton Case (1959). What impressed Charyn most was the narrative
+voice of sleuth Lew Archer—at once sympathetic and detached, who
+“deliver[s] both a landscape and a past without least hint of
+sentimentality.” The experiences of Charyn’s brother, Harvey, an NYPD
+homicide detective, added authenticity to this popular series, which
+attracted a cult following worldwide.</p>
+</blockquote>
+
+<p>schreibt die englische Wikipedia über <a href="https://en.wikipedia.org/wiki/Jerome_Charyn" target="_blank">Jerome Charyn</a>.</p>
+
+<h4 id="isaac-sidel-reihe">Isaac-Sidel-Reihe</h4>
+
+<ul>
+  <li>1975: Blue Eyes</li>
+  <li>1976: Marilyn the Wild</li>
+  <li>1976: The Education of Patrick Silver</li>
+  <li>1978: Secret Issac</li>
+  <li>1990: The Good Policeman</li>
+  <li>1992: Maria’s Girls</li>
+  <li>1993: Montezuma’s Man</li>
+  <li>1995: Little Angel Street</li>
+  <li>1997: El Bronx</li>
+  <li>1999: Citizen Sidel</li>
+  <li>2012: Under the Eye of God</li>
+  <li>2017: Winter Warning</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="chandler">&lt; Raymond Chandler</a>
+	
+	
+	<a class="active" href="child">Lee Child &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

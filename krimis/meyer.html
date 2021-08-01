@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Deon Meyer</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="deon-meyer">Deon Meyer</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Deon_Meyer" target="_blank">Deon Meyer</a>
+ist ein südafrikanischer Autor: <a href="http://www.deonmeyer.com" target="_blank">Homepage</a></p>
+
+<h4 id="benny-griessel-reihe">Benny-Griessel-Reihe</h4>
+
+<ul>
+  <li>2004: <em>Devil’s Peak</em> (dt. <a href="https://de.wikipedia.org/wiki/Der_Atem_des_Jägers" target="_blank">Der Atem des Jägers</a>)</li>
+  <li>2008: <em>Thirteen Hours</em> (dt. Dreizehn Stunden)</li>
+  <li>2011: <em>Seven Days</em> (dt. Sieben Tage)</li>
+  <li>2013: <em>Cobra</em> (dt. Cobra)</li>
+  <li>2015: <em>Icarus</em> (dt. Icarus)</li>
+  <li>2017: The Woman in the Blue Cloak (dt. Die Amerikanerin)</li>
+  <li>2018: <em>The Last Hunt</em> (dt. Beute)</li>
+  <li>2020: Dinkerdrif</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>1996: <em>Dead before Dying</em>  (dt. <a href="https://de.wikipedia.org/wiki/Der_traurige_Polizist" target="_blank">Der traurige Polizist</a>)</li>
+  <li>2000: <em>Dead at Daybreak</em> (dt. <a href="https://de.wikipedia.org/wiki/Tod_vor_Morgengrauen" target="_blank">Tod vor Morgengrauen</a>)</li>
+  <li>2002: <em>Heart of the Hunter</em> (dt. <a href="https://de.wikipedia.org/wiki/Das_Herz_des_Jägers" target="_blank">Das Herz des Jägers</a>)</li>
+  <li>2007: <em>Blood Safari</em> (dt. <a href="https://de.wikipedia.org/wiki/Weißer_Schatten" target="_blank">Weißer Schatten</a>)</li>
+  <li>2010: <em>Trackers</em> (dt. Rote Spur)</li>
+  <li>2016: <em>Fever</em> (dt. Fever)</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="mckinty">&lt; Adria McKinty</a>
+	
+	
+	<a class="active" href="mooney">Chris Mooney &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

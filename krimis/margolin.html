@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Phillip Margolin</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="phillip-margolin">Phillip Margolin</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Phillip_Margolin" target="_blank">Phillip Margolin</a>
+ist ein amerikanischer Autor: <a href="https://phillipmargolin.com" target="_blank">Homepage</a></p>
+
+<h4 id="amanda-jaffe-reihe">Amanda-Jaffe-Reihe</h4>
+
+<ul>
+  <li>2000: <em>Wild Justice</em></li>
+  <li>2003: <em>Ties That Bind</em></li>
+  <li>2006: <em>Proof Positive</em></li>
+  <li>2009: <em>Fugitive</em></li>
+  <li>2016: <em>Violent Crimes</em></li>
+</ul>
+
+<h4 id="brad-millerdana-cutler-reihe">Brad-Miller/Dana-Cutler-Reihe</h4>
+
+<ul>
+  <li>2008: <em>Executive Privilege</em></li>
+  <li>2010: <em>Supreme Justice</em></li>
+  <li>2012: <em>Capitol Murder</em></li>
+  <li>2013: <em>Sleight of Hand</em></li>
+</ul>
+
+<h4 id="robin-lockwood-reihe">Robin-Lockwood-Reihe</h4>
+
+<ul>
+  <li>2018: <em>The Third Victim</em></li>
+  <li>2019: <em>The Perfect Alibi</em></li>
+  <li>2020: A Reasonable Doubt</li>
+  <li>2021: A Matter Of Life and Death</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>1978: <em>Heartstone</em></li>
+  <li>1981: <em>The Last Innocent Man</em></li>
+  <li>1993: <em>Gone, But Not Forgotten</em></li>
+  <li>1995: <em>After Dark</em></li>
+  <li>1996: <em>The Burning Man</em></li>
+  <li>1998: <em>The Undertaker’s Widow</em></li>
+  <li>2002: <em>The Associate</em></li>
+  <li>2004: <em>Sleeping Beauty</em></li>
+  <li>2005: <em>Lost Lake</em></li>
+  <li>2014: <em>Worthy Brown’s Daughter</em></li>
+  <li>2014: <em>Woman With a Gun</em></li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="locke">&lt; Attica Locke</a>
+	
+	
+	<a class="active" href="mawer">Simon Mawer &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

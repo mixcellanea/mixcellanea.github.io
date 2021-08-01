@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - John Connolly</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="john-connolly">John Connolly</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/John_Connolly_(Schriftsteller)" target="_blank">John Connolly</a>
+ist ein irischer Autor: <a href="https://www.johnconnollybooks.com" target="_blank">Homepage</a></p>
+
+<p>Die Hauptfigur in der Charlie-Parker-Reihe von Büchern ist nach <a href="https://de.wikipedia.org/wiki/Charlie_Parker" target="_blank">Charlie „Bird“ Parker</a> benannt.</p>
+
+<blockquote>
+  <p>In den Romanen vermischen sich Realität und Übersinnliches:
+Geistererscheinungen, Halluzinationen bzw. Visionen und übernatürliche
+Wesen tauchen in den Geschichten auf. Auch Connollys Charaktere sind
+oft mystisch überhöht: Louis wird als „hitman without equal“ („Killer
+ohne Gleichen“) eingeführt; er und Angel agieren oft als Parkers
+„Schutzengel“. Parker selbst scheint telepathische Fähigkeiten zu
+haben, und viele der Verbrechen haben einen esoterischen Hintergrund.
+In der Kritik wurde Connolly deswegen oft mit Stephen King verglichen,
+zumal einige von Connollys Werken in Kings Heimat Portland, Maine,
+spielen, wo auch sein Protagonist Charles Parker herstammt.</p>
+</blockquote>
+
+<p>heißt es in dem Artikel zu John Connolly in der deutschen Wikipedia.</p>
+
+<h4 id="charlie-parker-reihe">Charlie-Parker-Reihe</h4>
+
+<ul>
+  <li>1999: <em>Every Dead Thing</em> (dt. <a href="https://de.wikipedia.org/wiki/Das_schwarze_Herz_(Roman)" target="_blank">Das schwarze Herz</a>)</li>
+  <li>2000: <em>Dark Hollow</em> (dt. <a href="https://de.wikipedia.org/wiki/Das_dunkle_Vermächtnis" target="_blank">Das dunkle Vermächtnis</a>)</li>
+  <li>2001: The Killing Kind (dt. In tiefer Finsternis)</li>
+  <li>2002: The White Road (dt. Die weiße Straße)</li>
+  <li>2005: The Black Angel (dt. Der brennende Engel)</li>
+  <li>2007: The Unquiet (dt. Der Kollektor)</li>
+  <li>2008: The Reapers (dt. Todbringer)</li>
+  <li>2009: The Lovers (dt. Der Pakt der Liebenden)</li>
+  <li>2010: The Whisperers (dt. Die Bruderschaft der Nacht)</li>
+  <li>2011: The Burning Soul</li>
+  <li>2012: The Wrath of Angels</li>
+  <li>2014: The Wolf in Winter</li>
+  <li>2015: A Song of Shadows</li>
+  <li>2016: A Time of Torment</li>
+  <li>2017: A Game of Ghosts</li>
+  <li>2018: The Woman in the Woods</li>
+  <li>2020: A Book of Bones</li>
+  <li>2018: The Dirty South</li>
+  <li>2021: The Nameless Ones</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="connelly">&lt; Michael Connelly</a>
+	
+	
+	<a class="active" href="crais">Robert Crais &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

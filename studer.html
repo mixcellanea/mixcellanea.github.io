@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Index zu <em>Reisende der Weltrevolution</em></h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <p>Diese Seiten enthalten den Index zu <a href="https://de.wikipedia.org/wiki/Brigitte_Studer" target="_blank">Brigitte Studers</a> Werk <em>Reisende der Weltevolution. Eine Globalgeschichte der <a href="https://de.wikipedia.org/wiki/Kommunistische_Internationale" target="_blank">Kommunistischen Internationale</a></em>, Suhrkamp 2020.</p>
+
+<p>Die Einträge im Index werden ergänzt durch kurze Angaben darüber, wie
+die Person im Buch vorkommt. Personen, die im Buch besonders ausführlich
+vorkommen, sind kursiv hervorgehoben. Die Einträge haben Links zur Wikipedia und
+weiteren Quellen mit biografischen Angaben.</p>
+
+<ul>
+  <li><a href="/studer/studerA">A Abdelkader - Auden</a></li>
+  <li><a href="/studer/studerB">B Bai Chongxi - Brutzkus</a></li>
+  <li><a href="/studer/studerC">C Caballero - Crispien</a></li>
+  <li><a href="/studer/studerD">D Dahlem - Dutt</a></li>
+  <li><a href="/studer/studerE">E Ebenhoech - Ežov</a></li>
+  <li><a href="/studer/studerF">F Fazekas - Fürstenberg</a></li>
+  <li><a href="/studer/studerG">G Gandhi - Gyptner</a></li>
+  <li><a href="/studer/studerH">H Hadj - Hurtado</a></li>
+  <li><a href="/studer/studerIJ">IJ Ibárruri - Jurr</a></li>
+  <li><a href="/studer/studerK">K Kaetzler - Kuusinen</a></li>
+  <li><a href="/studer/studerL">L La Guma - Luxemburg</a></li>
+  <li><a href="/studer/studerM">M Machado - Musy</a></li>
+  <li><a href="/studer/studerN">N Narbutabekow - Norden</a></li>
+  <li><a href="/studer/studerO">O Oesterreich - Ozaki</a></li>
+  <li><a href="/studer/studerPQ">PQ Padmore - Quelch</a></li>
+  <li><a href="/studer/studerR">R Rabaté - Rylski</a></li>
+  <li><a href="/studer/studerS">S Šabanova - Swierczewski</a></li>
+  <li><a href="/studer/studerT">T Tab Pingshan - Tzara</a></li>
+  <li><a href="/studer/studerU">U Uhse - Uribe</a></li>
+  <li><a href="/studer/studerV">V Vaillant-Couturier - Vujović</a></li>
+  <li><a href="/studer/studerWX">WX Waldron - Xiang Zhongfa</a></li>
+  <li><a href="/studer/studerZ">Z Zaisser - Zörgiebel</a></li>
+</ul>
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

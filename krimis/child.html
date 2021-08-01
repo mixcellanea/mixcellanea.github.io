@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Lee Child</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="lee-child">Lee Child</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Lee_Child" target="_blank">Lee Child</a>
+ist ein britisch-amerikanischer Autor, der die Figur des ehemaligen
+Militärpolizisten <a href="https://de.wikipedia.org/wiki/Jack_Reacher_(Romanfigur)" target="_blank">Jack Reacher</a> ersonnen hat.</p>
+
+<h4 id="jack-reacher-reihe">Jack-Reacher-Reihe</h4>
+
+<ul>
+  <li>1997: <em>Killing Floor</em> (dt. Größenwahn)</li>
+  <li>1998: <em>Die Trying</em> (dt. <a href="https://de.wikipedia.org/wiki/Ausgeliefert_(Roman)" target="_blank">Ausgeliefert</a>)</li>
+  <li>1999: <em>Tripwire</em> (dt. Sein wahres Gesicht)</li>
+  <li>2000: <em>Running Blind</em> (dt. Zeit der Rache)</li>
+  <li>2001: <em>Echo Burning</em> (dt.In letzter Sekunde)</li>
+  <li>2002: <em>Without Fail</em> (dt. Tödliche Absicht)</li>
+  <li>2003: <em>Persuader</em> (dt. Der Janusmann)</li>
+  <li>2004: <em>The Enemy</em> (dt. Die Abschussliste)</li>
+  <li>2005: <em>One Shot</em> (dt. Sniper)</li>
+  <li>2006: <em>The Hard Way</em> (dt. Way Out)</li>
+  <li>2007: <em>Bad Luck and Trouble</em> (dt. Trouble)</li>
+  <li>2008: <em>Nothing to Lose</em> (dt. Outlaw)</li>
+  <li>2009: <em>Gone Tomorrow</em> (dt. Underground)</li>
+  <li>2010: <em>61 Hours</em> (dt. 61 Stunden)</li>
+  <li>2010: <em>Worth Dying For</em> (dt. Wespennest)</li>
+  <li>2011: <em>The Affair</em> (dt. Der letzte Befehl)</li>
+  <li>2012: <em>A Wanted Man</em> (dt. Der Anhalter)</li>
+  <li>2013: <em>Never go back</em> (dt. Die Gejagten)</li>
+  <li>2014: <em>Personal</em> (dt. Im Visier)</li>
+  <li>2015: <em>Make Me</em> (dt. Keine Kompromisse)</li>
+  <li>2016: <em>Night School</em>  (dt. Der Ermittler)</li>
+  <li>2017: <em>The Midnight Line</em> (dt. Der Bluthund)</li>
+  <li>2018: <em>Past Tense</em></li>
+  <li>2019: <em>Blue Moon</em></li>
+  <li>2020: <em>Sentinel</em></li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="charyn">&lt; Jerome Charyn</a>
+	
+	
+	<a class="active" href="coben">Harlan Coben &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

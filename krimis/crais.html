@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Robert Crais</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="robert-crais">Robert Crais</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Robert_Crais" target="_blank">Robert Crais</a>
+ist ein amerikanischer Autor: <a href="https://www.robertcrais.com" target="_blank">Homepage</a></p>
+
+<h4 id="elvis-colejoe-pike-reihe">Elvis Cole/Joe Pike-Reihe</h4>
+
+<ul>
+  <li>1987: <em>The Monkeys Raincoat</em> (dt. Die gefährlichen Wege des Elvis Cole)</li>
+  <li>1989: <em>Stalking the Angel</em> (dt. Die schwarze Welt des Elvis Cole)</li>
+  <li>1992: <em>Lullaby Town</em>  (dt. Lullaby Town)</li>
+  <li>1993: <em>Free Fall</em> (dt. Im freien Fall)</li>
+  <li>1995: <em>Voodoo River</em> (dt. Voodoo River)</li>
+  <li>1996: <em>Sunset Express</em> (dt. Falsches Spiel in L.A.)</li>
+  <li>1997: <em>Indigo Slam</em></li>
+  <li>1999: <em>L.A. Requiem</em> (dt. Stunde der Rache)</li>
+  <li>2003: <em>The Last Detective</em></li>
+  <li>2005: <em>The Forgotten Man</em></li>
+  <li>2007: <em>The Watchman</em></li>
+  <li>2008: <em>Chasing Darkness</em></li>
+  <li>2010: <em>The First Rule</em> (dt. Gesetz des Todes)</li>
+  <li>2011: <em>The Sentry</em></li>
+  <li>2012: <em>Taken</em> (dt. Straße des Todes)</li>
+  <li>2015: <em>The Promise</em> (dt. Zeit der Jagd)</li>
+  <li>2017: The Wanted</li>
+  <li>2019: A Dangerous Man</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>2000: Demolition Angel (dt. Feuerengel)</li>
+  <li>2001: Hostage (dt. Hostage – Entführt)</li>
+  <li>2006: The Two Minute Rule</li>
+  <li>2013: Suspect (dt. Unter Verdacht)</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="connolly">&lt; John Connolly</a>
+	
+	
+	<a class="active" href="cruz-smith">Martin Cruz Smith &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

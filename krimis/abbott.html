@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Jeff Abbott</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="jeff-abbott">Jeff Abbott</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Jeff_Abbott" target="_blank">Jeff
+Abbott</a> ist ein
+amerikanischer Schriftsteller, der in Austin TX lebt:
+<a href="https://jeffabbott.com" target="_blank">Homepage</a>.</p>
+
+<blockquote>
+  <p>A theme of his work is the idea of ordinary people caught up in extraordinary danger and fighting to return to their normal lives.</p>
+</blockquote>
+
+<p>sagt die <a href="https://en.wikipedia.org/wiki/Jeff_Abbott" target="_blank">englische
+Wikipedia</a>.</p>
+
+<h4 id="jordan-poteet-reihe">Jordan-Poteet-Reihe</h4>
+
+<ul>
+  <li>1994: Do Unto Others</li>
+  <li>1995: The Only Good Yankee</li>
+  <li>1996: Promises of Home</li>
+  <li>1996: Distant Blood</li>
+</ul>
+
+<h4 id="whit-mosley-reihe">Whit-Mosley-Reihe</h4>
+
+<ul>
+  <li>2001: <em>A Kiss Gone Bad</em></li>
+  <li>2002: <em>Black Jack Point</em></li>
+  <li>2003: <em>Cut and Run</em></li>
+</ul>
+
+<h4 id="sam-capra-reihe">Sam-Capra-Reihe</h4>
+
+<ul>
+  <li>2012: Adrenaline</li>
+  <li>2012: The Last Minute</li>
+  <li>2014: Downfall</li>
+  <li>2015: Inside Man</li>
+  <li>2016: The First Order</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>2005: Panic</li>
+  <li>2007: Fear</li>
+  <li>2008: Collision</li>
+  <li>2009: Trust Me</li>
+  <li>2017: Blame</li>
+  <li>2019: The Three Beths</li>
+  <li>2020: Never Ask Me</li>
+  <li>2021: An Ambush of Widows</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	
+	<a class="active" href="ambler">Eric Ambler &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>
