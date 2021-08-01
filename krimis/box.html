@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - C. J. Box</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="c-j-box">C. J. Box</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/C._J._Box" target="_blank">C. J. Box</a>
+ist ein amerikanischer Schriftsteller, der in Cheyenne WY lebt:
+<a href="https://www.cjbox.net" target="_blank">Homepage</a></p>
+
+<blockquote>
+  <p>[C. J. Box] se lance en littérature en 2001 avec la publication de <em>Détonations
+ rapprochées (Open Season)</em>, premier titre d’une série policière
+ consacrée aux enquêtes du garde-chasse Joe Pickett. Homme paisible et
+ assez ordinaire, il travaille dur et aime la besogne bien faite en
+ dépit de son salaire qui couvre à peine les besoins de sa famille.
+ Tireur médiocre dans une région où chacun porte une arme à feu, il
+ possède des qualités morales faites d’intégrité, d’honnêteté et d’une
+ irréprochable droiture.</p>
+</blockquote>
+
+<p>sagt die <a href="https://fr.wikipedia.org/wiki/C._J._Box" target="_blank">französische
+Wikipedia</a>.</p>
+
+<h4 id="joe-pickett-reihe">Joe-Pickett-Reihe</h4>
+
+<ul>
+  <li>2001: <em>Open Season</em></li>
+  <li>2002: <em>Savage Run</em></li>
+  <li>2003: <em>Winterkill</em></li>
+  <li>2004: <em>Trophy Hunt</em></li>
+  <li>2005: <em>Out of Range</em></li>
+  <li>2006: <em>In Plain Sight</em></li>
+  <li>2007: <em>Free Fire</em></li>
+  <li>2008: <em>Blood Trail</em></li>
+  <li>2009: <em>Below Zero</em></li>
+  <li>2010: <em>Nowhere to Run</em></li>
+  <li>2011: <em>Cold Wind</em></li>
+  <li>2012: <em>Force of Nature</em></li>
+  <li>2013: <em>Breaking Point</em></li>
+  <li>2014: <em>Stone Cold</em></li>
+  <li>2015: <em>Endangered</em></li>
+  <li>2016: <em>Off the Grid</em></li>
+  <li>2017: <em>Vicious Circle</em></li>
+  <li>2018: <em>The Disappeared</em></li>
+  <li>2019: <em>Wolf Pack</em></li>
+  <li>2020: <em>Long Range</em></li>
+  <li>2021: <em>Dark Sky</em></li>
+</ul>
+
+<h4 id="cassie-dewell-reihe">Cassie-Dewell-Reihe</h4>
+
+<ul>
+  <li>2013: <em>The Highway</em></li>
+  <li>2015: <em>Badlands</em></li>
+  <li>2017: <em>Paradise Valley</em></li>
+  <li>2019: The Bitteroots</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>2008: <em>Blue Heaven</em></li>
+  <li>2009: <em>Three Weeks to Say Goodbye</em></li>
+  <li>2011: <em>Back of Beyond</em></li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="bannalec">&lt; Jean-Luc Bannalec</a>
+	
+	
+	<a class="active" href="brooke">P. J. Brooke &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

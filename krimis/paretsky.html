@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Sara Paretsky</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="sara-paretsky">Sara Paretsky</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Sara_Paretsky" target="_blank">Sara Paretsky</a>
+ist eine amerikanische Autorin: <a href="https://www.saraparetsky.com" target="_blank">Homepage</a>.</p>
+
+<blockquote>
+  <p>I loved detective fiction, but I was troubled by the way women were
+traditionally portrayed in that genre — they always seemed to be
+either evil or powerless. I thought it was time for a tough, smart,
+likable female private investigator, and that’s how VI came to life.</p>
+</blockquote>
+
+<p>sagt Sara Paretsky laut deutscher Wikipedia über ihre Hauptfigur.</p>
+
+<h4 id="v-i-warshawski-reihe">V.-I-.Warshawski-Reihe</h4>
+
+<ul>
+  <li>1982: Indemnity Only (dt. Schadenersatz)</li>
+  <li>1984: Deadlock (dt. Deadlock)</li>
+  <li>1985: Killing Orders (dt. Fromme Wünsche)</li>
+  <li>1987: Bitter Medicine (dt. Tödliche Therapie)</li>
+  <li>1988: Blood Shot (dt. Blood Shot)</li>
+  <li>1990: Burn Marks (dt. Brandstifter)</li>
+  <li>1992: Guardian Angel (dt. Eine für alle)</li>
+  <li>1994: Tunnel Vision (dt. Engel im Schacht)</li>
+  <li>1999: Hard Time (dt. Die verschwundene Frau)</li>
+  <li>2001: Total Recall (dt. Ihr wahrer Name)</li>
+  <li>2003: Blacklist (dt. Blacklist)</li>
+  <li>2005: Fire Sale (dt. Feuereifer)</li>
+  <li>2009: Hardball (dt. Hardball)</li>
+  <li>2010: Body Work</li>
+  <li>2012: Breakdown</li>
+  <li>2013: Critical Mass (dt. Kritische Masse)</li>
+  <li>2015: Brush Back</li>
+  <li>2017: Fallout (dt. Altlasten)</li>
+  <li>2018: Shell Game</li>
+  <li>2020: Dead Land (dt. Landnahme)</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>1998: Ghost Country (dt. Geisterland)</li>
+  <li>2008: Bleeding Kansas</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="nunn">&lt; Malla Nunn</a>
+	
+	
+	<a class="active" href="rankin">Ian Rankin &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

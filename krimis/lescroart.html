@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - John Lescroart</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="john-lescroart">John Lescroart</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/John_T._Lescroart" target="_blank">John Lescroart</a>
+ist ein amerikanischer Autor: <a href="https://johnlescroart.com" target="_blank">Homepage</a></p>
+
+<h4 id="dismas-hardy-reihe">Dismas-Hardy-Reihe</h4>
+
+<ul>
+  <li>1989: Dead Irish (dt. Der Deal)</li>
+  <li>1990: The Vig (dt. Die Rache)</li>
+  <li>1993: Hard Evidence (dt. Das Indiz)</li>
+  <li>1994: The 13th Juror (dt. Das Urteil)</li>
+  <li>1998: The Mercy Rule (dt. Gnade vor Recht)</li>
+  <li>1999: <em>Nothing But the Truth</em> (dt. So wahr mir Gott helfe)</li>
+  <li>1999: <em>The Hearing</em> (dt. Die Anhörung)</li>
+  <li>2002 <em>The Oath</em> (dt. Der Schwur)</li>
+  <li>2003: The First Law (dt. Ehernes Gesetz)</li>
+  <li>2004: The Second Chair (dt. Dünnes Eis)</li>
+  <li>2004: The Motive (dt. Das Motiv)</li>
+  <li>2007: <em>Betrayal</em> (dt. Schattenkampf)</li>
+  <li>2009: <em>A Plague of Secrets</em></li>
+  <li>2013: <em>The Ophelia Cut</em></li>
+  <li>2014: <em>The Keeper</em></li>
+  <li>2015: <em>The Fall</em></li>
+  <li>2018: Poison</li>
+  <li>2019: The Rule of Law</li>
+  <li>2021: The Missing Piece</li>
+</ul>
+
+<h4 id="rebecca-hardy-reihe">Rebecca-Hardy-Reihe</h4>
+
+<ul>
+  <li>2015: <em>The Fall</em></li>
+</ul>
+
+<h4 id="abe-glitzky-reihe">Abe-Glitzky-Reihe</h4>
+
+<ul>
+  <li>1995: A Certain Justice (dt. Die Farben der Gerechtigkeit)</li>
+  <li>1996: Guilt (dt. Der Vertraute)</li>
+  <li>2011: Damage (dt. Der Angeklagte)</li>
+</ul>
+
+<h4 id="wyatt-hunt-reihe">Wyatt-Hunt-Reihe</h4>
+
+<ul>
+  <li>2005: <em>The Hunt Club</em> (dt. Das Gesetz der Jagd)</li>
+  <li>2010: <em>Treasure Hunt</em></li>
+  <li>2012: <em>The Hunter</em></li>
+</ul>
+
+<h4 id="gina-roake-reihe">Gina-Roake-Reihe</h4>
+
+<ul>
+  <li>2007: <em>The Suspect</em> (dt. Mordverdacht)</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>2017: Fatal</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="kerr">&lt; Philip Kerr</a>
+	
+	
+	<a class="active" href="locke">Attica Locke &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

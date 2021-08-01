@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Barry Eisler</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="barry-eisler">Barry Eisler</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Barry_Eisler" target="_blank">Barry Eisler</a>
+ist ein amerikanischer Autor: <a href="https://www.barryeisler.com" target="_blank">Homepage</a></p>
+
+<h4 id="john-rain-reihe">John-Rain-Reihe:</h4>
+
+<ul>
+  <li>2002: <em>Rain Fall</em>, neuer Titel: A Clean Kill in Tokyo (dt. Tokio Killer,
+  neuer Titel: Sanfter Tod in Tokio)</li>
+  <li>2003: <em>Hard Rain</em>, neuer Titel: A Lonely Resurrection (dt. Tokio Killer: Die Rache, neuer Titel: Einsame Auferstehung)</li>
+  <li>2004: <em>Rain Storm</em>, neuer Titel: Winner Take All (dt. Tokio Killer: Der Verrat, neuer Titel: Alles für den Sieger)</li>
+  <li>2005: Killing Rain, neuer Titel: Redemption Games (dt. Tokio Killer: Tödliches Gewissen)</li>
+  <li>2006: The Last Assassin, neuer Titel: Extremis (dt. Tokio Killer: Riskante Rückkehr)</li>
+  <li>2007: Requiem for an Assassin, neuer Titel: The Killer Ascendant (dt. Tokio Killer: Letzte Vergeltung)</li>
+  <li>2011: The Detachment (dt. Tokio Killer: Die Einheit)</li>
+  <li>2014: Graveyard of Memories (dt. Tokio Killer: Grab der Erinnerungen)</li>
+  <li>2017: Zero Sum, 2017</li>
+  <li>2019: The Killer Collective</li>
+  <li>2021: The Chaos Kind</li>
+</ul>
+
+<h4 id="ben-treven-reihe">Ben-Treven-Reihe:</h4>
+
+<ul>
+  <li>2009: Fault Line</li>
+  <li>2010: Inside Out</li>
+  <li>2011: The Detachment (dt. Tokio Killer: Die Einheit)</li>
+</ul>
+
+<h4 id="livia-lone-reihe">Livia-Lone-Reihe</h4>
+
+<ul>
+  <li>2016: Livia Lone</li>
+  <li>2018: The Night Trade</li>
+  <li>2019: The Killer Collective</li>
+  <li>2019: All the Devils</li>
+  <li>2021: The Chaos Kind</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>2018: The God’s Eye View  (dt. Das allwissende Auge)</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="downing">&lt; David Downing</a>
+	
+	
+	<a class="active" href="finder">Joseph Finder &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>

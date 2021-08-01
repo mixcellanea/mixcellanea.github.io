@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<img src="/img/mixc.svg" alt="">
+		<h4 class="text-grey"> Krimiserien - Philip Kerr</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="philip-kerr">Philip Kerr</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Philip_Kerr" target="_blank">Philip Kerr</a>
+(1956–2018) war ein britischer Autor.</p>
+
+<h4 id="bernhard-gunther-reihe">Bernhard-Gunther-Reihe</h4>
+
+<ul>
+  <li>1989: <em>March Violets</em> (dt. Feuer in Berlin)</li>
+  <li>1990: <em>The Pale Criminal</em> (dt. Im Sog der dunklen Mächte)</li>
+  <li>1991: <em>A German Requiem</em> (dt. Alte Freunde, neue Freunde)</li>
+  <li>2006: The One from the Other (dt. Das Janusprojekt)</li>
+  <li>2008: A Quiet Flame (dt. Das letzte Experiment)</li>
+  <li>2009: If the Dead Rise Not (dt. <a href="https://de.wikipedia.org/wiki/Die_Adlon-Verschwörung" target="_blank">Die Adlon-Verschwörung</a>)</li>
+  <li>2010: Field Grey (dt. Mission Walhalla)</li>
+  <li>2011: Prague Fatale (dt. Böhmisches Blut)</li>
+  <li>2013: A Man without Breath (dt. Wolfshunger)</li>
+  <li>2015: The Lady From Zagreb (dt. Operation Zagreb)</li>
+  <li>2016: The Other Side of Silence (dt. Kalter Frieden)</li>
+  <li>2017: Prussian Blue (dt. Berliner Blau)</li>
+  <li>2018: Greeks Bearing Gifts (dt. Trojanische Pferde)</li>
+  <li>2019: Metropolis</li>
+</ul>
+
+<h4 id="scott-manson-reihe">Scott-Manson-Reihe</h4>
+
+<ul>
+  <li>2014: January Window (dt. Der Wintertransfer)</li>
+  <li>2015: Hand of God (dt. Die Hand Gottes)</li>
+  <li>2016: The False Nine (dt. Die flache Neun)</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>1992: A Philosophical Investigaton (dt. Das Wittgensteinprogramm)</li>
+  <li>1993: Dead Meat (dt. Gesetze der Gier)</li>
+  <li>1995: Gridiron (dt. Game over)</li>
+  <li>1997: Esau (dt. Esau)</li>
+  <li>1998: A Five Year Plan (dt. Der Plan)</li>
+  <li>1998: The Second Angel (dt. Der zweite Engel)</li>
+  <li>2000: The Shot (dt. Der Tag X)</li>
+  <li>2002: Dark Matter: The Private Life of Sir Isaac Newton (dt. Newtons
+  Schatten)</li>
+  <li>2004: Leverage (dt. Der Coup)</li>
+  <li>2005: Hitler’s Peace (dt. Der Pakt)</li>
+  <li>2013: Prayer</li>
+  <li>2014: The Winter Horses (dt. Winterpferde)</li>
+  <li>2014: Research</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="kanon">&lt; Joseph Kanon</a>
+	
+	
+	<a class="active" href="lescroart">John Lescroart &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>
