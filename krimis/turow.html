@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/css/chota.css"> -->
+		<link rel="stylesheet" href="/css/chota.min.css"> 
+    <link rel="stylesheet" href="/css/mixc.css">
+		<link rel="shortcut icon" type="image/x-icon" href="https://mixcellanea.github.io/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="https://mixcellanea.github.io/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+			<div class="hero">
+	<div class="logo is-center is-vertical-align">
+		<a href="/index.html"> <img src="/img/mixc.svg" alt="Banner
+			Miscellanea"></a> 
+		<h4 class="text-grey"> Krimiserien - Scott Turow</h4>
+ 	</div>
+	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
+</div>
+
+			<nav class="nav">
+					<div class="nav-right">
+						<a class="active" href="javascript:history.back()">⬅︎ Zurück</a>
+						<a class="active" href="/index.html">⌾ Startseite</a>
+					</div>
+			</nav>		
+      <h2 id="scott-turow">Scott Turow</h2>
+
+<p><a href="https://de.wikipedia.org/wiki/Scott_Turow" target="_blank">Scott Turow</a>
+ist ein amerikanischer: <a href="https://www.scottturow.com" target="_blank">Homepage</a></p>
+
+<h4 id="kindle-county-reihe">Kindle-County-Reihe</h4>
+
+<ul>
+  <li>1987: <em>Presumed Innocent</em> (dt. Aus Mangel an Beweisen)</li>
+  <li>1990: <em>The Burden of Proof</em> (dt. Die Bürder der Wahrheit)</li>
+  <li>1993: <em>Pleading Guilty</em> (dt. So wahr mir Geld helfe)</li>
+  <li>1995: <em>The Laws of Our Fathers</em>  (dt. Das gesetz der Väter)</li>
+  <li>1999: <em>Personal Injuries</em> (dt. Die Gierigen und die Gerechten)</li>
+  <li>2002: <em>Reversible Errors</em> (dt. Das Gift der Gewissheit)</li>
+  <li>2006: Limitations (dt. Befangen)</li>
+  <li>2010: Innocent (dt. Der letzte Beweis)</li>
+  <li>2013: Identical (dt. Die Erben des Zeus)</li>
+  <li>2020: The Last Trial</li>
+</ul>
+
+<h4 id="weitere-romane">Weitere Romane</h4>
+
+<ul>
+  <li>2005: <em>Ordinary Heroes</em> (dt. Der Befehl)</li>
+  <li>2017: Testimony</li>
+</ul>
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="stone">&lt; Nick Stone</a>
+	
+	
+	<a class="active" href="verdon">John Verdon &gt;</a>
+	
+	</div>
+</nav>
+
+
+		<footer>
+	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
+	<div class="row">
+  <div class="col text-left text-grey"> Miscellanea von <a
+			 href="https://github.com/mixcellanea"
+			 target="_blank">Mixcellanea</a> <br/> mit Hilfe von <a
+				href="https://jekyllrb.com" target="_blank">Jekyll</a> und <a
+				href="https://jenil.github.io/chota/" target=_blank">chota</a>.</div>
+	<div class="col text-right"><a href="#top">⬆︎ Zum Anfang</a> <br/> 
+		<a href="javascript:void(0)" id="theme-switch"
+			onclick="switchMode(this)">☀️ Modus</a>
+	</div>
+</div>
+  </footer>
+
+    </div>
+		<!-- for darkmode
+		 localStorage damit die Umschaltung auf allen Seiten wirkt
+-->
+
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+			localStorage.setItem("color-scheme", "dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus"
+    }
+
+	if (localStorage.getItem("color-scheme") == "dark") {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙 Modus";
+		} else {
+      document.body.classList.remove("dark");
+      document.querySelector('#theme-switch').innerHTML = "☀️ Modus";
+			}		
+			
+			
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️ Modus"), bodyClass.remove("dark"),
+						localStorage.setItem("color-scheme", "sunny"))
+        : ((el.innerHTML = "🌙 Modus"), bodyClass.add("dark"),
+						localStorage.setItem("color-scheme", "dark"));
+    }
+  </script>
+
+  </body>
+</html>
