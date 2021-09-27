@@ -5,6 +5,10 @@ blockquote {
   border-left: 3px solid var(--color-lightGrey);
 }
 
+strong {
+	font-weight: 500;
+}	
+
 .card {
   padding: 1.5rem 2rem 1rem;
 }	
