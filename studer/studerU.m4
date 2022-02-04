@@ -16,7 +16,7 @@
 	<div class="logo is-center is-vertical-align">
 		<a href="/index.html"> <img src="/img/mixc.svg" alt="Banner
 			Miscellanea"></a> 
-		<h4 class="text-grey"> Index zu <em>Reisende der Weltrevolution</em></h4>
+		<h4 class="text-grey"> Index zu <em>Reisende der Weltrevolution</em> - U</h4>
  	</div>
 	<hr style="height:2px; margin-top:8px; margin-bottom:0px;"/>
 </div>
@@ -27,37 +27,43 @@
 						<a class="active" href="/index.html">⌾ Startseite</a>
 					</div>
 			</nav>		
-      <p>Diese Seiten enthalten das Personenregister zu <a href="https://de.wikipedia.org/wiki/Brigitte_Studer" target="_blank">Brigitte Studer</a>: <em>Reisende der Weltrevolution. Eine Globalgeschichte der <a href="https://de.wikipedia.org/wiki/Kommunistische_Internationale" target="_blank">Kommunistischen Internationale</a></em>, Suhrkamp 2020.</p>
+      include(`macros.m4')
 
-<p>Die Einträge im Index werden ergänzt durch kurze Angaben darüber, wie
-die Person im Buch vorkommt. Personen, die im Buch besonders ausführlich
-vorkommen, sind kursiv hervorgehoben. Die Einträge haben Links zur Wikipedia und
-weiteren Quellen mit biografischen Angaben.</p>
+## U
 
-<ul>
-  <li><a href="/studer/studerA">A Abdelkader - Auden</a></li>
-  <li><a href="/studer/studerB">B Bai Chongxi - Brutzkus</a></li>
-  <li><a href="/studer/studerC">C Caballero - Crispien</a></li>
-  <li><a href="/studer/studerD">D Dahlem - Dutt</a></li>
-  <li><a href="/studer/studerE">E Ebenhoech - Ežov</a></li>
-  <li><a href="/studer/studerF">F Fazekas - Fürstenberg</a></li>
-  <li><a href="/studer/studerG">G Gandhi - Gyptner</a></li>
-  <li><a href="/studer/studerH">H Hadj - Hurtado</a></li>
-  <li><a href="/studer/studerIJ">IJ Ibárruri - Jurr</a></li>
-  <li><a href="/studer/studerK">K Kaetzler - Kuusinen</a></li>
-  <li><a href="/studer/studerL">L La Guma - Luxemburg</a></li>
-  <li><a href="/studer/studerM">M Machado - Musy</a></li>
-  <li><a href="/studer/studerN">N Narbutabekow - Norden</a></li>
-  <li><a href="/studer/studerO">O Oesterreich - Ozaki</a></li>
-  <li><a href="/studer/studerPQ">PQ Padmore - Quelch</a></li>
-  <li><a href="/studer/studerR">R Rabaté - Rylski</a></li>
-  <li><a href="/studer/studerS">S Šabanova - Swierczewski</a></li>
-  <li><a href="/studer/studerT">T Tab Pingshan - Tzara</a></li>
-  <li><a href="/studer/studerU">U Uhse - Uribe</a></li>
-  <li><a href="/studer/studerV">V Vaillant-Couturier - Vujović</a></li>
-  <li><a href="/studer/studerWX">WX Waldron - Xiang Zhongfa</a></li>
-  <li><a href="/studer/studerZ">Z Zaisser - Zörgiebel</a></li>
-</ul>
+* m4forkb(https://de.wikipedia.org/wiki/Bodo_Uhse, `Uhse, Bodo')
+	(1904–1963) 404 <br/>
+	Deutscher Nationalsozialist, später KPD-Mitglied; arbeitete am m4braunbuch mit (404).
+* m4anker(ulbricht)m4forkb(https://de.wikipedia.org/wiki/Walter_Ulbricht, 
+	`Ulbricht, Walter') (1893–1973) 28, 412, 484, 545 <br/>
+	Deutscher Kommunist; trat im Pariser Volksfrontausschuss an die Stelle
+	m4slink(M, münzenberg, Münzenbergs), nachdem dieser 1936 durch die
+	m4komintern aller seiner Funktionen enthoben wurde (412) – einer der
+	Stalin loyalen Spitzenfunktionäre, die in der Sowjetunion Unterkunft fanden (545).
+* __Ulyanov, Vladimir__ m4slink(L, lenin, `Lenin, Vladimir')	
+* __Undjus, Alice Margaret__, »Daisy« 348 <br/>
+	Für die m4profintern in Shanghai tätig, Frau von m4slink(K, krumbein, Charles Krumbein).
+* m4forkb(https://en.wikipedia.org/wiki/Vicente_Uribe, `Uribe, Vicente')
+	(1902–1961) 462, 519 <br/>
+	Spanischer Kommunist; mit m4slink(D, diaz, José Díaz) und 
+	m4slink(IJ, ibarruri, Dolores Ibárruri) von der m4komintern 1932 in die
+	Parteiführung der m4pce eingesetzt (462, 519).
+
+<!-- previous and next page -->
+<nav class="nav">
+	<div class="nav-right">
+	
+	<a class="active" href="studerT">< T</a>
+	
+	
+	<a class="active" href="../studer">A..Z</a>
+	
+	
+	<a class="active" href="studerV">V ></a>
+	
+	</div>
+</nav>		
+
 
 		<footer>
 	<hr style="height:2px; margin-top:24px; margin-bottom:8px;"/>
